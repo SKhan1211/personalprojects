@@ -19,6 +19,16 @@
     <h1>Things I've Learned with this Mini-Project</h1>
     <ul>
       <li>I can use max-width 100% on the smallest elements of a container to make the parent fit 100% of the viewport responsively</li>
+      <li>The flex CSS property is shorthand for flex-grow, flex-shrink, and flex-basis all in one</li>
+      <li>The general rule to achieve the siblings moving outward is as follow:
+        <ul>
+          <li>When hovering over parent container, shift all of the items inside the container to the left</li>
+          <li>Use the general sibling combinator to make the items positioned after the hovered items move to the right</li>
+          <li>Get super specific so a hovered item isn't translated like the rest of the items</li>
+        </ul>
+      </li>
+      <li>The general sibling combinator (~) seperated two selectors and matches the second element only if it follows the first element as long as both are children of the same element</li>
+      <li>MDN docs can provide more information about the general sibling combinator with examples</li>
     </ul>
   </div>
   <script src="./src/index.js"></script>
