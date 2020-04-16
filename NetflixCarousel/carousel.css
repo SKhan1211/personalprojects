@@ -80,3 +80,21 @@ h1 {
   transform: scale(1.5);
   z-index: 1;
 }
+
+/* Focus on container shifts everything to left */
+.container:focus-within .item,
+.container:hover .item {
+  transform: translateX(-25%);
+}
+
+/* Sibling selector outward effect CSS */
+.item:hover ~ .item,
+.item:focus ~ .item {
+  transform: translateX(25%);
+}
+
+.container .item:focus,
+.container .item:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}

@@ -29,6 +29,9 @@
       </li>
       <li>The general sibling combinator (~) seperated two selectors and matches the second element only if it follows the first element as long as both are children of the same element</li>
       <li>MDN docs can provide more information about the general sibling combinator with examples</li>
+      <li>Ordering matters, first on hover or active we translate the whole container to the left</li>
+      <li>Next, on hover or active individual items we translate items after the hovered/selected one using the general sibling combinator to the right</li>
+      <li>Lastly, we scale the hovered/selected image to make it bigger and take more space</li>
     </ul>
   </div>
   <script src="./src/index.js"></script>
